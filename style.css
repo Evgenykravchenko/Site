@@ -1,0 +1,383 @@
+/*Работаем с фоном страниц*/
+body {
+    /*Задаем цвет фона для страницы*/
+    background: linear-gradient(to top right, rgb(101, 115, 255), rgb(111, 114, 247), rgb(120, 114, 239), rgb(130, 113, 231), rgb(139, 112, 223), rgb(149, 111, 215), rgb(158, 111, 208), rgb(168, 110, 200), rgb(177, 109, 192), rgb(187, 108, 184), rgb(196, 108, 176), rgb(206, 107, 168)) no-repeat;
+}
+
+html {
+    min-height: 100%;
+}
+
+
+/*Работаем со списком меню*/
+.menu {
+    margin-top: 70px;
+}
+
+.menu li {
+    margin-left: 40px;
+    float: right;
+    display: inline-block;
+    /*Убираем маркеры списка*/
+    list-style: none;
+    /*Размер шрифта*/
+    width: 200px;
+    height: 40px;
+    background: #eaeaea;
+    border-radius: 20px;
+}
+
+
+/*Работаем с ссылками в меню*/
+.menu li a {
+    text-align: center;
+    display: block;
+    height: 100%;
+    /* Шрифт с засечками */
+    font-family: 'Times New Roman', Times, serif;
+    /*Курсивное начертание*/
+    font-style: italic;
+    /*Убираем нижнее подчеркивание*/
+    text-decoration: none;
+    /*Размер шрифта*/
+    font-size: 30px;
+    /*Цвет текста*/
+    color: #484343;
+    /*Насыщенность шрифта*/
+    font-weight: 400;
+    /*Высота текста*/
+    line-height: 24px;
+}
+
+.menu li a:hover {
+    color: burlywood;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.menu li:hover {
+    height: 45px;
+
+}
+
+
+.menu li a:active {
+    padding: 5%;
+    color: red;
+}
+
+/*Работаем с загаловками на страницах товаров
+Краткое описание, Характеристики и Подробное описание*/
+.heading {
+    /*Ставим цвет*/
+    color: black;
+    /*Указываем размер шрифта*/
+    font-size: 18px;
+    /*Насыщенность шрифта*/
+    font-weight: 400;
+    /*Фоновый цвет*/
+    background-color: #eaeaea;
+    /*Центровка текста*/
+    text-align: center;
+}
+
+/*Работаем с текстом краткого описания на старницах товаров*/
+.short_product_description {
+    /*Цвет текста*/
+    color: #707070;
+    /*Размер шрифта*/
+    font-size: 14px;
+    /*Курсивное начертание*/
+    font-style: italic;
+    /*Высота текста*/
+    line-height: 16px;
+}
+
+/*Работаем с текстом подрбного описания на старницах товаров*/
+.detailed_product_description {
+    /*Цвет текста*/
+    color: #484343;
+    /*Размер шрифта*/
+    font-size: 16px;
+    /*Насыщенность шрифта*/
+    font-weight: 400;
+    /*Высота текста*/
+    line-height: 24px;
+    /*Расположение по левому краю*/
+    text-align: left;
+}
+
+/*Работаем с input элементами на странице contact*/
+.input_boxes {
+    /*Убрали обводку*/
+    outline: none;
+    /*Цвет текста*/
+    color: dimgray;
+    /*Устанавливаем размеры полей и цвет фона*/
+    width: 200px;
+    height: 25px;
+    background-color: #eaeaea;
+    /*Скругляем углы*/
+    border-radius: 10px;
+    /*Размер и стиль шрифта*/
+    font-size: 25px;
+    /* Шрифт с засечками */
+    font-family: 'Times New Roman', Times, serif;
+    /*Курсивное начертание*/
+    font-style: italic;
+}
+
+/*Работаем с полем для ввода сообщения(вопроса)*/
+#msg_box {
+    outline: none;
+    /*Устанавливаем максимальные и минимальные размеры окна при расширении*/
+    max-width: 700px;
+    max-height: 300px;
+    min-width: 400px;
+    min-height: 100px;
+    /*Устанавливаем размеры*/
+    width: 400px;
+    height: 100px;
+    /*Устанавливаем цвет фона*/
+    background-color: #eaeaea;
+    /*Скругляем углы*/
+    border-radius: 6px;
+    /*Размер шрифта*/
+    font-size: 25px;
+    /* Шрифт с засечками */
+    font-family: 'Times New Roman', Times, serif;
+    /*Курсивное начертание*/
+    font-style: italic;
+}
+
+/*Кнопки*/
+.buttons {
+    margin-left: 100px;
+    color: dimgray;
+    font-style: italic;
+    font-size: 15px;
+    padding: 5px 15px;
+    background: #eaeaea;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/*Фото товара на странице товара*/
+.product_photo > img {
+    /*Рамка*/
+    padding: 2% 2%;
+    border: 2px solid black;
+}
+
+.product_photo > img:hover {
+    border: 2px solid transparent;
+}
+
+/*Подписи у input в contact*/
+.contact_form {
+    /*Цвет текста*/
+    color: black;
+    /*Размер и стиль шрифта*/
+    font-size: 20px;
+    /* Шрифт с засечками */
+    font-family: 'Times New Roman', Times, serif;
+    /*Курсивное начертание*/
+    font-style: italic;
+}
+
+
+.list li:nth-child(3):after {
+    content: " new";
+    color: blueviolet;
+    text-transform: uppercase;
+}
+
+
+
+.detailed_product_description:first-letter,
+.short_product_description:first-letter {
+    font-style: oblique;
+    font-size: 30px;
+}
+
+.characteristics_table {
+    border: 1px solid #000;
+    height: 150px;
+    border-collapse: collapse;
+}
+
+.characteristics_table td {
+    border: 1px solid #000;
+    padding-left: 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#email_box:focus {
+    color: black;
+    background: white;
+}
+
+.products_main a {
+    display: block;
+    /* Шрифт с засечками */
+    font-family: 'Times New Roman', Times, serif;
+    /*Курсивное начертание*/
+    font-style: italic;
+    /*Убираем нижнее подчеркивание*/
+    text-decoration: none;
+    /*Размер шрифта*/
+    font-size: 17px;
+    /*Цвет текста*/
+    color: #484343;
+    /*Насыщенность шрифта*/
+    font-weight: 400;
+    /*Высота текста*/
+    line-height: 20px;
+    text-align: center;
+    background-color: #eaeaea;
+    border-radius: 20px;
+}
+
+.products_main a:hover {
+    background-color: #e5ebf1;
+    width: 260px;
+}
+
+.products_main {
+    width: 250px;
+    padding: 1% 5%;
+}
+
+.container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Параметры тени */
+    padding: 10px;
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    background: #f8f8f8;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: 25px;
+    margin-bottom: 100px;
+    background: url(img/backgroundTest.png);
+}
+
+.header {
+    height: 200px;
+    position: relative;
+    text-align: center;
+}
+
+.logo {
+    float: left;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+
+.header h1 {
+    text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15);
+    font-family: 'Righteous', cursive;
+    position: relative;
+    color: #3CA1D9;
+    display: inline-block;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    font-size: 3em;
+    padding: 11px 60px;
+    margin: 0;
+    line-height: 1;
+}
+
+.header h1:before,
+.header h1:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    background: repeating-linear-gradient(180deg, transparent, transparent 2px, #3CA1D9 2px, #3CA1D9 4px);
+}
+
+.header h1:before {
+    left: 0;
+}
+
+.header h1:after {
+    right: 0;
+}
+
+@media (max-width: 420px) {
+    .header h1 {
+        font-size: 2em;
+    }
+}
+
+.hello_text {
+    margin: 0 auto;
+    text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15);
+}
+
+.mainHeaderOnMainPage {
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.main_page_content {
+    position: relative;
+    padding: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.footer span {
+    display: block;
+    float: left;
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+    background-color: #484343;
+    height: 20px;
+}
+
+
+
+
